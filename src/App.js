@@ -3,13 +3,15 @@ import clipart from "../src/assets/clipart.png";
 import avatar from "../src/assets/avatar.png";
 
 import Header from "./componenets/header/Header";
-import styled  from 'styled-components';
+import styled from 'styled-components';
 import { ContactModal } from "./componenets/contactModal/ContactModal";
 import { useState } from "react";
+import { Projects } from "./componenets/projects/Projects";
 
 function App() {
 
 	const [showModal, setShowModal] = useState(false);
+	const [projects, setProjects] = useState(false);
 
 	const showModalHandler = () => {
 		setShowModal(true)
@@ -17,26 +19,36 @@ function App() {
 
 	const closeModalHandler = () => {
 		setShowModal(false)
+	
+	}
+	const showProjectsHandler = () => {
+		setProjects(true)
+	}
+
+	const closeProjectsHandler = () => {
+		setProjects(false)
 	}
 
 	return (
 		<Styled.Wrapper scroll={showModal}>
-			<Header />
-			{showModal && <ContactModal show={showModalHandler} close={closeModalHandler}/>}		
-			<Aboutme>
-				<p>
-					Hey, my name is Daviti Sozashvili and you can call me David
-				</p>
-				<p>
-					feel free to <span onClick={showModalHandler}>contact</span> me...
-				</p>
-			</Aboutme>
-			<Avatar>
-				<img src={avatar} />
-			</Avatar>
-			{/* <Clipart>
-				<img src={clipart} />
-			</Clipart> */}
+			<Header onShowProjects={showProjectsHandler} onCloseProjects={closeProjectsHandler}/>
+			{showModal && <ContactModal show={showModalHandler} close={closeModalHandler} />}
+			{projects ?
+				<Projects />
+				:
+				<div>
+					<Aboutme>
+						<p>
+							Hey, my name is Daviti Sozashvili and you can call me David
+						</p>
+						<p>
+							feel free to <span onClick={showModalHandler}>contact</span> me...
+						</p>
+					</Aboutme>
+					<Avatar>
+						<img src={avatar} />
+					</Avatar>
+				</div>}
 		</Styled.Wrapper>
 	);
 }

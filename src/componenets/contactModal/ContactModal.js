@@ -38,7 +38,7 @@ const BackDrop = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: lightgray;
+    background-color: grey;
     opacity: 0.5;
     cursor: pointer;
 `
@@ -68,7 +68,7 @@ const Modal = styled.div`
     a {
         display: inline-block;
         margin-top: 20px;
-        background-color: #65C9FF;
+        /* background-color: #65C9FF; */
         padding: 5px 15px;
         border-radius: 7px;
     }
