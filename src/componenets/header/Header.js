@@ -9,7 +9,6 @@ export default function Header() {
                 <img src={logo} />
             </Styled.Logo>
             <Styled.Contact>
-                <div>About Me</div>
                 <div>Projects</div>
                 <button>Say Hello</button>
             </Styled.Contact>

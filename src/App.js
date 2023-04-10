@@ -1,25 +1,40 @@
 import * as Styled from "./styled";
 import clipart from "../src/assets/clipart.png";
+import avatar from "../src/assets/avatar.png";
 
 import Header from "./componenets/header/Header";
 import styled  from 'styled-components';
+import { ContactModal } from "./componenets/contactModal/ContactModal";
+import { useState } from "react";
 
 function App() {
+
+	const [showModal, setShowModal] = useState(false);
+
+	const showModalHandler = () => {
+		setShowModal(true)
+	}
+
+	const closeModalHandler = () => {
+		setShowModal(false)
+	}
+
 	return (
-		<Styled.Wrapper>
+		<Styled.Wrapper scroll={showModal}>
 			<Header />
+			{showModal && <ContactModal show={showModalHandler} close={closeModalHandler}/>}		
 			<Aboutme>
 				<p>
 					Hey, my name is Daviti Sozashvili and you can call me David
 				</p>
-				{/* <p>
-					I’m a front-end web developer from Georgia. I’m always curious to 
-					learn more when it comes to new technologies and creative coding.
-				</p> */}
-					<p>
-						feel free to <span>contact</span> me...
-					</p>
+				<p>
+					feel free to <span onClick={showModalHandler}>contact</span> me...
+				</p>
 			</Aboutme>
+			<Avatar>
+			<img src={avatar} />
+
+			</Avatar>
 			<Clipart>
 				<img src={clipart} />
 			</Clipart>
@@ -34,7 +49,7 @@ const Aboutme = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100px;
+	/* padding: 100px; */
 	p:first-child {
 		max-width: 1000px;
 		text-align: center; 
@@ -55,4 +70,11 @@ const Aboutme = styled.div`
 
 const Clipart = styled.div`
 	text-align: center;
+`
+
+const Avatar = styled.div`
+	text-align: center;
+	img {
+		height: 350px;
+	}
 `
