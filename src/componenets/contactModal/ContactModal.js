@@ -40,6 +40,7 @@ const BackDrop = styled.div`
     bottom: 0;
     background-color: lightgray;
     opacity: 0.5;
+    cursor: pointer;
 `
 
 const Modal = styled.div`
@@ -59,6 +60,7 @@ const Modal = styled.div`
     align-items: center;
     gap: 20px;
     font-weight: bold;
+
     div {
         text-align: center;
         color: #606887;
@@ -66,7 +68,7 @@ const Modal = styled.div`
     a {
         display: inline-block;
         margin-top: 20px;
-        background-color: #25AAE1;
+        background-color: #65C9FF;
         padding: 5px 15px;
         border-radius: 7px;
     }

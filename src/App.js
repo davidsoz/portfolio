@@ -32,12 +32,11 @@ function App() {
 				</p>
 			</Aboutme>
 			<Avatar>
-			<img src={avatar} />
-
+				<img src={avatar} />
 			</Avatar>
-			<Clipart>
+			{/* <Clipart>
 				<img src={clipart} />
-			</Clipart>
+			</Clipart> */}
 		</Styled.Wrapper>
 	);
 }
@@ -66,6 +65,7 @@ const Aboutme = styled.div`
 			cursor: pointer;
 		}
 	}
+	
 `
 
 const Clipart = styled.div`
