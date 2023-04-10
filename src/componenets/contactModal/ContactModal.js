@@ -46,11 +46,11 @@ const BackDrop = styled.div`
 const Modal = styled.div`
     position: absolute;
     width: fit-content;
-    left: 0; 
-    right: 0; 
+    left: 0;
+    right: 0;
     top: 29%;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff;
     padding: 25px;
     border-radius: 10px;
@@ -60,6 +60,7 @@ const Modal = styled.div`
     align-items: center;
     gap: 20px;
     font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     div {
         text-align: center;
