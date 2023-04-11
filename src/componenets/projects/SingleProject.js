@@ -28,10 +28,7 @@ const Container = styled.div`
             1px 2px 4px 0px rgba(245, 213, 174 ,0.7),
             2px 4px 8px 0px rgba(245, 213, 174 ,0.7),
             2px 4px 16px 0px rgba(245, 213, 174 ,0.7);
-    
-    div {
-        /* font-weight: bold; */
-    }
+
     img {
         height: 100px;
     }
