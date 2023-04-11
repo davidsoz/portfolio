@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import clipart from "./assets/clipartOpp.png"
+import clipart from "./assets/wallhaven.png"
 
 export const Wrapper = styled.div`
     max-width: 1650px;

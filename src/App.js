@@ -19,7 +19,7 @@ function App() {
 
 	const closeModalHandler = () => {
 		setShowModal(false)
-	
+
 	}
 	const showProjectsHandler = () => {
 		setProjects(true)
@@ -63,13 +63,15 @@ const Aboutme = styled.div`
 	/* padding: 100px; */
 	p:first-child {
 		max-width: 1000px;
-		text-align: center; 
+		text-align: center;
 		font-size: 52px;
 		font-weight: bold;
+		padding: 10px;
+		text-shadow: 3px 4px 7px rgba(20,20,20,0.3);
 	}
 	p:last-child {
 		max-width: 1000px;
-		text-align: center; 
+		text-align: center;
 		font-size: 32px;
 		>span {
 			font-weight: bold;
@@ -77,7 +79,7 @@ const Aboutme = styled.div`
 			cursor: pointer;
 		}
 	}
-	
+
 `
 
 const Clipart = styled.div`
