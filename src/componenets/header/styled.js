@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 35px 0;
+    font-family: 'kanit', sans-serif;
 `
 
 export const Logo = styled.div`
@@ -23,8 +24,9 @@ export const Contact = styled.div`
         font-size: 24px;
         cursor: pointer;
         user-select: none;
-        color: #606887;
+        color: #F3E8FF;
     }
+   
     button {
         font-size: 22px;
         padding: 10px 25px;
@@ -34,6 +36,8 @@ export const Contact = styled.div`
         border: 3px solid #3458eb;
         cursor: pointer;
         transition: background-color 0.3s;
+        font-family: 'kanit', sans-serif;
+
         &:hover {
             color: #fff;
             background-color: #3458eb;
