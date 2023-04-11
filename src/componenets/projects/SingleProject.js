@@ -22,9 +22,15 @@ const Container = styled.div`
     padding: 40px 40px;
     text-align: center;
     font-size: 22px;
-    background-color: #65C9FF;
+    background-color: #F5D5AE;
+    font-family: 'kanit', sans-serif;
+    box-shadow: 0px 1px 2px 0px rgba(245, 213, 174 ,0.7),
+            1px 2px 4px 0px rgba(245, 213, 174 ,0.7),
+            2px 4px 8px 0px rgba(245, 213, 174 ,0.7),
+            2px 4px 16px 0px rgba(245, 213, 174 ,0.7);
+    
     div {
-        font-weight: bold;
+        /* font-weight: bold; */
     }
     img {
         height: 100px;

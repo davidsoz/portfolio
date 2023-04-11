@@ -10,11 +10,11 @@ export function ContactModal({ show, close }) {
             <Modal>
                 <div>
                     <div>Phone</div>
-                    <a href=''>+995 598 314 917</a>
+                    <span>+995 598 314 917</span>
                 </div>
                 <div>
                     <div>E-mail</div>
-                    <a href=''>davidsozashvili@gmail.com</a>
+                    <span>davidsozashvili@gmail.com</span>
                 </div>
                 <div>
                     <div>LinkedIn</div>
@@ -59,18 +59,19 @@ const Modal = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: 'kanit', sans-serif;
 
     div {
         text-align: center;
         color: #606887;
     }
-    a {
+    a, span {
         display: inline-block;
         margin-top: 20px;
         /* background-color: #65C9FF; */
         padding: 5px 15px;
         border-radius: 7px;
+        color: #5A1F8C;
     }
 `

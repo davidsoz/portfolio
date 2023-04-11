@@ -30,51 +30,54 @@ function App() {
 	}
 
 	return (
-		<Styled.Wrapper scroll={showModal}>
-			<Header onShowProjects={showProjectsHandler} onCloseProjects={closeProjectsHandler}/>
-			{showModal && <ContactModal show={showModalHandler} close={closeModalHandler} />}
-			{projects ?
-				<Projects />
-				:
-				<div>
-					<Aboutme>
-						<p>
-							Hey, my name is Daviti Sozashvili and you can call me David
-						</p>
-						<p>
-							feel free to <span onClick={showModalHandler}>contact</span> me...
-						</p>
-					</Aboutme>
-					<Avatar>
-						<img src={avatar} />
-					</Avatar>
-				</div>}
-		</Styled.Wrapper>
+		<Styled.ContainerFluid>
+			<Styled.Wrapper scroll={showModal}>
+				<Header onShowProjects={showProjectsHandler} onCloseProjects={closeProjectsHandler} />
+				{showModal && <ContactModal show={showModalHandler} close={closeModalHandler} />}
+				{projects ?
+					<Projects />
+					:
+					<div>
+						<Aboutme>
+							<p>
+								Hey, my name is Daviti Sozashvili and you can call me David
+							</p>
+							<p>
+								feel free to <span onClick={showModalHandler}>contact</span> me...
+							</p>
+						</Aboutme>
+						<Avatar>
+							<img src={avatar} />
+						</Avatar>
+					</div>}
+			</Styled.Wrapper>
+		</Styled.ContainerFluid>
 	);
 }
 
 export default App;
 
 const Aboutme = styled.div`
-	color: #606887;
+	color: #F5D5AE;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	user-select: none;
 	/* padding: 100px; */
 	p:first-child {
 		max-width: 1000px;
 		text-align: center;
 		font-size: 52px;
-		font-weight: bold;
+		/* font-weight: bold; */
 		padding: 10px;
-		text-shadow: 3px 4px 7px rgba(20,20,20,0.3);
+		/* text-shadow: 3px 3px 3px rgba(255,255,255,0.3); */
 	}
 	p:last-child {
 		max-width: 1000px;
 		text-align: center;
 		font-size: 32px;
 		>span {
-			font-weight: bold;
+			/* font-weight: bold; */
 			color: #25AAE1;
 			cursor: pointer;
 		}
