@@ -69,7 +69,6 @@ const Modal = styled.div`
     a, span {
         display: inline-block;
         margin-top: 20px;
-        /* background-color: #65C9FF; */
         padding: 5px 15px;
         border-radius: 7px;
         color: #5A1F8C;

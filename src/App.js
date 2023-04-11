@@ -33,23 +33,25 @@ function App() {
 		<Styled.ContainerFluid>
 			<Styled.Wrapper scroll={showModal}>
 				<Header onShowProjects={showProjectsHandler} onCloseProjects={closeProjectsHandler} />
-				{showModal && <ContactModal show={showModalHandler} close={closeModalHandler} />}
-				{projects ?
-					<Projects />
-					:
-					<div>
-						<Aboutme>
-							<p>
-								Hey, my name is Daviti Sozashvili and you can call me David
-							</p>
-							<p>
-								feel free to <span onClick={showModalHandler}>contact</span> me...
-							</p>
-						</Aboutme>
-						<Avatar>
-							<img src={avatar} />
-						</Avatar>
-					</div>}
+				<Styled.main>
+					{showModal && <ContactModal show={showModalHandler} close={closeModalHandler} />}
+					{projects ?
+						<Projects />
+						:
+						<div>
+							<Aboutme>
+								<p>
+									Hey, my name is Daviti Sozashvili and you can call me David
+								</p>
+								<p>
+									feel free to <span onClick={showModalHandler}>contact</span> me...
+								</p>
+							</Aboutme>
+							<Avatar>
+								<img src={avatar} />
+							</Avatar>
+						</div>}
+				</Styled.main>
 			</Styled.Wrapper>
 		</Styled.ContainerFluid>
 	);
