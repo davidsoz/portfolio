@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     max-width: 1650px;
     padding: 0 50px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     overflow: hidden;
     background-image: url(${clipart});

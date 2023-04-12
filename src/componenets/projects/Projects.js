@@ -20,6 +20,7 @@ export function Projects() {
 const Container = styled.div`
     display: flex;
     justify-content: space-between;
+    padding-top: 90px;
     flex-wrap: wrap;
     gap: 50px;
 `;
