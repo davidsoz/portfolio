@@ -25,9 +25,9 @@ const Container = styled.div`
     background-color: #F5D5AE;
     font-family: 'kanit', sans-serif;
     box-shadow: 0px 1px 2px 0px rgba(245, 213, 174 ,0.7),
-            1px 2px 4px 0px rgba(245, 213, 174 ,0.7),
-            2px 4px 8px 0px rgba(245, 213, 174 ,0.7),
-            2px 4px 16px 0px rgba(245, 213, 174 ,0.7);
+            1px 2px 2px 0px rgba(245, 213, 174 ,0.7),
+            2px 4px 2px 0px rgba(245, 213, 174 ,0.7),
+            2px 4px 4px 0px rgba(245, 213, 174 ,0.7);
 
     img {
         height: 100px;

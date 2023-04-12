@@ -48,7 +48,7 @@ const Modal = styled.div`
     width: fit-content;
     left: 0;
     right: 0;
-    top: 29%;
+    top: 28%;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
