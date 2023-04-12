@@ -7,9 +7,9 @@ export function SingleProject({name, logoUrl, url}) {
                 <img src={logoUrl} />    
             </div>
             <div>{name}</div>
-            <div>
-                <a href={url} target="_blank">{url}</a>
-            </div>
+            <Link>
+                <a href={url} target="_blank">Go To The Webpage</a>
+            </Link>
         </Container>
     )
 }
@@ -17,6 +17,7 @@ export function SingleProject({name, logoUrl, url}) {
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    width: 260px;
     gap: 20px;
     border-radius: 10%;
     padding: 40px 40px;
@@ -33,3 +34,7 @@ const Container = styled.div`
         height: 100px;
     }
 `;
+
+const Link = styled.div`
+
+`
