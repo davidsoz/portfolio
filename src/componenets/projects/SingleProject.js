@@ -7,9 +7,9 @@ export function SingleProject({name, logoUrl, url}) {
                 <img src={logoUrl} />    
             </div>
             <div>{name}</div>
-            <Link>
+            <div>
                 <a href={url} target="_blank">Go To The Webpage</a>
-            </Link>
+            </div>
         </Container>
     )
 }
@@ -29,12 +29,7 @@ const Container = styled.div`
             1px 2px 2px 0px rgba(245, 213, 174 ,0.7),
             2px 4px 2px 0px rgba(245, 213, 174 ,0.7),
             2px 4px 4px 0px rgba(245, 213, 174 ,0.7);
-
     img {
         height: 100px;
     }
 `;
-
-const Link = styled.div`
-
-`
