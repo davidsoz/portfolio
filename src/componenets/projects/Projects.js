@@ -6,6 +6,7 @@ import deliveryLogo from "../../assets/dish.png";
 import responsiveDesign from "../../assets/clipart.png";
 import newspaper from "../../assets/newspaper.png";
 import { SingleProject } from './SingleProject';
+import manageIcon from "../../assets/manage-icon-16.jpg";
 
 export function Projects() {
     return (
@@ -15,6 +16,7 @@ export function Projects() {
             <SingleProject logoUrl={deliveryLogo} name="Pre-Delivery App" url="https://order-app-davidsoz.vercel.app/"/>
             <SingleProject logoUrl={responsiveDesign} name="Responsive Design" url="https://markup-davidsoz.vercel.app/"/>
             <SingleProject logoUrl={newspaper} name="Social News App" url="https://task1-self.vercel.app/"/>
+            <SingleProject logoUrl={manageIcon} name="User Managment" url="https://user-managment-beta.vercel.app/"/>
         </Container>
     )
 }
