@@ -8,7 +8,7 @@ export function SingleProject({name, logoUrl, url}) {
             </div>
             <div>{name}</div>
             <div>
-                <a href={url} target="_blank">{url}</a>
+                <a href={url} target="_blank">Go To The Webpage</a>
             </div>
         </Container>
     )
@@ -17,6 +17,7 @@ export function SingleProject({name, logoUrl, url}) {
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    width: 260px;
     gap: 20px;
     border-radius: 10%;
     padding: 40px 40px;
@@ -25,10 +26,9 @@ const Container = styled.div`
     background-color: #F5D5AE;
     font-family: 'kanit', sans-serif;
     box-shadow: 0px 1px 2px 0px rgba(245, 213, 174 ,0.7),
-            1px 2px 4px 0px rgba(245, 213, 174 ,0.7),
-            2px 4px 8px 0px rgba(245, 213, 174 ,0.7),
-            2px 4px 16px 0px rgba(245, 213, 174 ,0.7);
-
+            1px 2px 2px 0px rgba(245, 213, 174 ,0.7),
+            2px 4px 2px 0px rgba(245, 213, 174 ,0.7),
+            2px 4px 4px 0px rgba(245, 213, 174 ,0.7);
     img {
         height: 100px;
     }
