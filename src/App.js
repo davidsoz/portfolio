@@ -86,6 +86,6 @@ const Aboutme = styled.div`
 const Avatar = styled.div`
 	text-align: center;
 	img {
-		width: auto;
+		height: 450px;
 	}
 `
