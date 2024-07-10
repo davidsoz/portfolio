@@ -40,12 +40,12 @@ function App() {
 						:
 						<div>
 							<Aboutme>
-								<p>
+								<div>
 									Hey, my name is Daviti Sozashvili and you can call me David
-								</p>
-								<p>
+								</div>
+								<div>
 									feel free to <span onClick={showModalHandler}>contact</span> me...
-								</p>
+								</div>
 							</Aboutme>
 							<Avatar>
 								<img src={web} />
@@ -65,13 +65,13 @@ const Aboutme = styled.div`
 	flex-direction: column;
 	align-items: center;
 	user-select: none;
-	p:first-child {
+	div:first-child {
 		max-width: 1000px;
 		text-align: center;
 		font-size: 52px;
-		padding: 10px;
+		padding: 100px;
 	}
-	p:last-child {
+	div:last-child {
 		max-width: 1000px;
 		text-align: center;
 		font-size: 32px;
