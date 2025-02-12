@@ -11,18 +11,21 @@ import airbetIcon from "../../assets/Airbet-casino.png";
 import financeLogo from "../../assets/1finance.png";
 
 
+
 export function Projects() {
 
     return (
         <Container>
             <SingleProject logoUrl={airbetIcon} name="Crypto Casino" url="https://airbet.io/" />
+            <SingleProject name="AWC Glub" logoUrl="https://awcgarejelebi.com/static/media/Garejelebi%20Logo%20variations-12-09.755e4b707c232a743447c04c9a541a40.svg" url="https://awcgarejelebi.com" />
+
             <SingleProject logoUrl={financeLogo} name="Financial Platform" url="https://1finance.net/" />
             <SingleProject logoUrl={cherrysLogo} name="Cherry's Fitness" url="https://www.cherrysfit.com/" />
             <SingleProject logoUrl={gammaLogo} name="Gamma Consulting" url="https://gamma.ge/" />
-            <SingleProject logoUrl={deliveryLogo} name="Pre-Delivery App" url="https://order-app-davidsoz.vercel.app/" />
+            {/* <SingleProject logoUrl={deliveryLogo} name="Pre-Delivery App" url="https://order-app-davidsoz.vercel.app/" />
             <SingleProject logoUrl={responsiveDesign} name="Responsive Design" url="https://markup-davidsoz.vercel.app/" />
             <SingleProject logoUrl={newspaper} name="Social News App" url="https://task1-self.vercel.app/" />
-            <SingleProject logoUrl={manageIcon} name="User Managment" url="https://user-managment-beta.vercel.app/" />
+            <SingleProject logoUrl={manageIcon} name="User Managment" url="https://user-managment-beta.vercel.app/" /> */}
         </Container>
     )
 }
