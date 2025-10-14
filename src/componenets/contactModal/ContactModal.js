@@ -23,12 +23,14 @@ export function ContactModal({ show, close }) {
       <BackDrop onClick={close} />
       <Modal>
         <div>
-          <div>Phone</div>
-          <span>+995 598 314 917</span>
+          <div>Phone / WhatsApp / Telegram</div>
+          <a href="tel:+995598314917">+995 598 314 917</a>
         </div>
         <div>
           <div>E-mail</div>
-          <span>davidsozashvili@gmail.com</span>
+          <a href="mailto:davidsozashvili@gmail.com">
+            davidsozashvili@gmail.com
+          </a>
         </div>
         <div>
           <div>LinkedIn</div>
