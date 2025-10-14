@@ -3,89 +3,95 @@ import web from "../src/assets/web.png";
 import avatar from "../src/assets/avatar.png";
 
 import Header from "./componenets/header/Header";
-import styled from 'styled-components';
+import styled from "styled-components";
 import { ContactModal } from "./componenets/contactModal/ContactModal";
 import { useState } from "react";
 import { Projects } from "./componenets/projects/ExitingProjects.js";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+  const [projects, setProjects] = useState(false);
 
-	const [showModal, setShowModal] = useState(false);
-	const [projects, setProjects] = useState(false);
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
 
-	const showModalHandler = () => {
-		setShowModal(true)
-	}
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+  const showProjectsHandler = () => {
+    setProjects(true);
+  };
 
-	const closeModalHandler = () => {
-		setShowModal(false)
+  const closeProjectsHandler = () => {
+    setProjects(false);
+  };
 
-	}
-	const showProjectsHandler = () => {
-		setProjects(true)
-	}
-
-	const closeProjectsHandler = () => {
-		setProjects(false)
-	}
-
-	return (
-		<Styled.ContainerFluid>
-			<Styled.Wrapper scroll={showModal}>
-				<Header onShowProjects={showProjectsHandler} onCloseProjects={closeProjectsHandler} />
-				<Styled.main>
-					{showModal && <ContactModal show={showModalHandler} close={closeModalHandler} />}
-					{projects ?
-						<Projects />
-						:
-						<div>
-							<Aboutme>
-								<div>
-									Hey, my name is Daviti Sozashvili and you can call me David
-								</div>
-								<div>
-									feel free to <span onClick={showModalHandler}>contact</span> me...
-								</div>
-							</Aboutme>
-							<Avatar>
-								<img src={web} />
-							</Avatar>
-						</div>}
-				</Styled.main>
-			</Styled.Wrapper>
-		</Styled.ContainerFluid>
-	);
+  return (
+    <Styled.ContainerFluid>
+      <Styled.Wrapper scroll={showModal}>
+        <Header
+          onShowProjects={showProjectsHandler}
+          onCloseProjects={closeProjectsHandler}
+          onShowModal={showModalHandler}
+		  projects={projects}
+        />
+        <Styled.main>
+          {showModal && (
+            <ContactModal show={showModalHandler} close={closeModalHandler} />
+          )}
+          {projects ? (
+            <Projects />
+          ) : (
+            <div>
+              <Aboutme>
+                <div>
+                  Hey, my name is David Sozashvili and you can call me David
+                </div>
+                <div>
+                  feel free to <span onClick={showModalHandler}>contact</span>{" "}
+                  me...
+                </div>
+              </Aboutme>
+              <Avatar>
+                <img src={web} alt="Web Development" />
+              </Avatar>
+            </div>
+          )}
+        </Styled.main>
+      </Styled.Wrapper>
+    </Styled.ContainerFluid>
+  );
 }
 
 export default App;
 
 const Aboutme = styled.div`
-	color: #F5D5AE;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	user-select: none;
-	div:first-child {
-		max-width: 1000px;
-		text-align: center;
-		font-size: 52px;
-		padding: 100px;
-	}
-	div:last-child {
-		max-width: 1000px;
-		text-align: center;
-		font-size: 32px;
-		>span {
-			color: #25AAE1;
-			cursor: pointer;
-		}
-	}
-
-`
+  color: #f5d5ae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  div:first-child {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 52px;
+    padding: 100px;
+  }
+  div:last-child {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 32px;
+    > span {
+      color: #25aae1;
+      cursor: pointer;
+    }
+  }
+`;
 
 const Avatar = styled.div`
-	text-align: center;
-	img {
-		height: 450px;
-	}
-`
+  text-align: center;
+  img {
+    height: 450px;
+  }
+`;
